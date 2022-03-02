@@ -1,1 +1,1 @@
-Shell basics with emacs and git 
+shell executable scripts
