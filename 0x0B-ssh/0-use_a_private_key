@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Bash script thst uses ssh to connect your server using the private key
 
-ssh -i ~/.ssh/shool ubuntu@44.200.186.181
+ssh -i ~/.ssh/school ubuntu@44.200.186.181
