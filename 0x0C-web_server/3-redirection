@@ -9,6 +9,6 @@ sudo ufw allow 'Nginx HTTP'
 echo "Hello World" | sudo tee /var/www/html/index.nginx-debian.html
 
 # configure redirection
-new_str="return 301 tech-novice://return_me permanent;"
+new_str="\\\treturn 301 tech-novice://return_me permanent;"
 sudo sed -i "42i $new_str" /etc/nginx/sites-available/default
 sudo service nginx restart
