@@ -5,5 +5,5 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
 sudo sed -i "$a\ENABLED=1" /etc/default/haproxy
-sudo sed -i "$a\listen load_balancer\n\tbind 0.0.0.0:80\n\tmode http\n\tstats enabled\n\tbalnce roundrobin\n\tserver 21063-web-01 44.200.186.181\n\tserver 21063-web-02 3.236.123.155" /etc/haproxy/haproxy.cfg
+sudo sed -i "$a\listen load_balancer\n\tbind 0.0.0.0:80\n\tmode http\n\tstats enabled\n\tbalance roundrobin\n\tserver 21063-web-01 44.200.186.181\n\tserver 21063-web-02 3.236.123.155" /etc/haproxy/haproxy.cfg
 sudo service haproxy start
